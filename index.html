@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>TextAlive + GSAP Lyrics Animation</title>
+<style>
+  body {
+    background: #111;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 50px;
+  }
+  #lyrics {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .char {
+    opacity: 0;
+    display: inline-block;
+    transform: translateY(50px);
+  }
+</style>
+</head>
+<body>
+  <div id="lyrics"></div>
+
+  <!-- TextAlive API -->
+  <script src="https://unpkg.com/@textalive-app/api@0.2.0/dist/index.min.js"></script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <!-- 自作スクリプト -->
+  <script src="main.js"></script>
+</body>
+</html>
