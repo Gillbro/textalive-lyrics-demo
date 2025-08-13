@@ -16,8 +16,7 @@ player.addListener({
   onAppReady: () => {
     // テスト用楽曲（TextAlive公式提供曲）
     if (!player.video) {
-      player.createFromSongUrl("https://piapro.jp/t/RoPB/20220122172830"
-      });
+      player.createFromSongUrl("https://piapro.jp/t/RoPB/20220122172830");
     }
   },
 
@@ -56,4 +55,5 @@ function showChar(char) {
     lyricsContainer.appendChild(document.createElement("br"));
   }
 }
+
 
